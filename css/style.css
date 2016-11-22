@@ -1,0 +1,500 @@
+
+
+/********************************************************************** 
+/ Import Google Font files
+/*********************************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Sniglet);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/********************************************************************** 
+/ General page properties to ensure correct placement of elements
+/*********************************************************************/
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-image: url('../images/bg.png');
+	margin:0 0 80px;
+}
+
+/********************************************************************** 
+/ General text formatting 
+/*********************************************************************/
+
+p, a,
+.captionTxt {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 14px;
+	margin-top: 0;
+    color: black;
+}
+
+
+h1 {
+	font-family: 'Sniglet', cursive;
+	font-size: 18px;
+}
+
+h2 {
+	font-family: 'Sniglet', cursive;
+	font-size: 15px;
+}
+
+/********************************************************************** 
+/ General styling for forms
+/*********************************************************************/
+
+form, fieldset {
+	border: none;
+}
+
+/********************************************************************** 
+/ Quickfix to make some space between the main container and the footer
+/*********************************************************************/
+
+#push {
+	height: 20px;
+}
+
+/********************************************************************** 
+/ Container to hold header and page content to ensure correct 
+/ placement of elements
+/*********************************************************************/
+
+#container {
+	min-height:100%;
+	height: auto !important;
+	height: 100%;
+	position: relative;
+}
+
+/********************************************************************** 
+/ Size and margins for the header container
+/*********************************************************************/
+
+#header {
+	width: 90%;
+	max-width: 900px;
+	height: 130px;
+	margin: 10px auto 0 auto;
+	padding: 10px;
+}	
+
+/********************************************************************** 
+/ Styling for logo image and text
+/*********************************************************************/
+
+#logo_background {
+	z-index: 1;
+	width: 123px;
+	height: 131px;
+	background-image: url('../images/logo_image.png');
+	top: 10%;
+	left: 40%;
+}
+
+#logo_text,
+#logo_text a {
+	z-index: 2;
+	letter-spacing: -2px;
+	font-size: 70px;
+	font-family: 'Sniglet', cursive;
+	color: black;
+	top: -52%;
+	left: 7%;
+	position: relative;
+	text-decoration: none;
+}
+
+/********************************************************************** 
+/ Main content container with styling, size and margins
+/*********************************************************************/
+
+#content {
+	padding: 10px;
+	border: 1px solid black;
+	background: white;
+	-moz-box-shadow: inset 0 0 70px #AFAFAF;
+   	-webkit-box-shadow: inset 0 0 70px #AFAFAF;
+   	box-shadow: inset 0 0 70px #AFAFAF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: 90%;
+	max-width: 900px;
+    min-height: 550px;
+	height: auto;
+	margin: 10px auto 10px auto;
+}
+
+#content p, h1, h2 {
+	margin: 20px;
+}
+
+/********************************************************************** 
+/ Styling, size, positioning and margins for footer container and text
+/*********************************************************************/
+
+#footer { 
+	background-color: #093; 
+    border-top: 8px solid #006652;
+	-moz-box-sizing: border-box;
+   	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	width: 100%;
+	height: 80px;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: 100;
+}
+
+#footerText {
+	font-size: 13px;
+	font-family: 'Sniglet', cursive;
+	color: white;
+	text-align: center;
+	margin: 10px;
+	letter-spacing: 1px;
+}
+
+/********************************************************************** 
+/ Styling, size, positioning and margins for navigation bar and links
+/*********************************************************************/
+
+#navbarContainer {
+	z-index: 10;
+	position: fixed;
+	width: 377px;
+	height: 100px;
+	top: 0px;
+	right: 26%;
+}
+
+#navbar,
+#navbar ul,
+#navbar li #navbar a {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font-family: 'Sniglet', cursive;
+	line-height: 1;
+}
+
+#navbar {
+	
+	z-index: 10;
+	position: fixed;
+	height: auto;
+	width: auto;
+	top: 0;
+	right: 26%;
+}
+
+#navbar ul {
+	background: #093;
+	border-bottom: 4px solid #006652;
+	border-left: 4px solid #006652;
+	border-right: 4px solid #006652;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#navbar ul:before {
+	content: '';
+	display: block;
+}
+
+#navbar ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#navbar a,
+#navbar a:link,
+#navbar a:visited {
+	padding: 15px 20px;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li:hover {
+  background: #006652;
+}
+
+/********************************************************************** 
+/ General styling for images with animated image caption
+/*********************************************************************/
+
+.image {
+	position: relative;
+	overflow: hidden;
+	margin: 20px;
+}
+
+.image img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out; 
+}
+
+.imgCaption {
+	background-color: rgba(0,0,0,0.8);  
+    position: absolute;  
+    color: #fff;  
+    z-index: 5;  
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+    left: 0;
+	height: 30px !important;
+	display: block;
+	bottom: -30px;
+}
+
+.imgCaption p {
+	position: absolute;
+	top: -13px;
+	font-size: 12px; 
+}
+
+.imgCaption a, a:visited {
+	text-decoration: underline;
+}
+
+.image:hover .imgCaption {
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);  
+}
+
+/********************************************************************** 
+/ Sizes for different instances of images
+/*********************************************************************/
+
+.fullwidth {
+	height: 513px;
+	width: 860px;
+}
+
+.halfwidth {
+	height: 205px;
+	width: 344px;
+}
+
+/********************************************************************** 
+/ Styling, positioning and margins for drop down boxes from the 
+/ navigation menu
+/*********************************************************************/
+
+#login-content,
+#search-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 999;    
+  background: #093;
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 2px;
+  border: 4px solid #006652;
+  width: 339px;
+  height: 96px;
+}
+
+#search-content {
+	height: 60px !important;
+}
+
+nav li #login-content,
+nav li #search-content {
+  right: 0;
+  width: 250px;  
+}
+
+/********************************************************************** 
+/ Styling and margins for input fields
+/*********************************************************************/
+
+.inputs input, 
+.inputs select {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+input[type="radio"] {
+	width: auto !important;
+	box-shadow: none !important;
+}
+
+.inputs input:focus,
+.inputs select:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/********************************************************************** 
+/ General and specific styling, positioning and margins for buttons
+/*********************************************************************/
+
+
+#login-button {
+	position: relative;
+	left: 258px;
+	top: -99px;
+}
+
+#search-button {
+	position: relative;
+	left: 258px;
+	top: -79px;
+}
+
+.submit {    
+  background-color: #d14545;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+  border: 1px solid #7e1515;
+  float: left;
+  height: 30px;
+  padding: 0 13px 0 13px;
+  width: auto;
+  cursor: pointer;
+  font: 14px 'Sniglet', cursive;
+  color: #fff;
+}
+
+.submit:hover,
+.submit:focus {    
+  background-color: #e97171;
+} 
+
+.submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+.submit::-moz-focus-inner {
+  border: none;
+}
+
+#login-content label,
+#search-content label {
+  line-height: 0;
+  text-decoration: underline;
+}
+
+/********************************************************************** 
+/ Element positioning and specific text formatting
+/*********************************************************************/
+
+#text-result,
+#distance-result
+#item-description {
+	display: inline-block;
+}
+
+.search-result a{
+	text-decoration: none;
+	color: black;
+}
+
+.search-result h1 {
+	text-decoration: underline;
+}
+
+.search-result {
+    width: 300px;
+}
+
+.single-review a {
+	color: black;
+}
+
+/********************************************************************** 
+/ Positioning and sizes for map objects
+/*********************************************************************/
+
+#map-result {
+	display: inline-block;
+	float: right;
+	margin: 20px;
+	width: 500px;
+	height: 500px;
+}
+
+#map-single-item {
+	display: inline-block;
+	float: right;
+	margin: 20px;
+	width: 350px;
+	height: 350px;
+}
+
+.date select {
+    width: auto !important;
+}
+
+.error {
+    color: red;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+#map-container {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    color: black;
+}
+
+#circle-marker {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+#review-link {
+    margin-left: 20px;
+}
+
+#review-text {
+    width: 500px;
+    height: 200px;
+
+}
